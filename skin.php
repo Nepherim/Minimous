@@ -13,13 +13,12 @@ $FmtPV['$SkinVersion'] = '"1.0.0"';
 
 global $PageLogoUrl,$PageLogoUrlHeight,$PageLogoUrlWidth,$HTMLStylesFmt,$SkinTheme,$action,$bi_EntryType,$bi_BlogIt_Enabled;
 if (!empty($PageLogoUrl)) {
-	dg_SetLogoHeightWidth(15, 16);
+	dg_SetLogoHeightWidth(15, 0);
 	$HTMLStylesFmt['minimous'] .=
-		'#logo .sitetitle a{height:' .$PageLogoUrlHeight .'; background: url(' .$PageLogoUrl .') left 16px no-repeat} '.
-		'#logo .sitetitle a, #logo .sitetag{padding-left: ' .$PageLogoUrlWidth .'} ';
+		'#headerimg {height:' .$PageLogoUrlHeight .'; background: url(' .$PageLogoUrl .') left no-repeat} '.
+		'#headerimg .sitetitle a, #headerimg .sitetag {padding-left: ' .$PageLogoUrlWidth .'} ';
 }
-if ($action=='browse' && IsEnabled($bi_BlogIt_Enabled))
-	$HTMLStylesFmt['minimous'] .= '#header, #footer {margin-left: 155px;}';
+if ($action=='browse' && IsEnabled($bi_BlogIt_Enabled))  $HTMLStylesFmt['minimous'] .= '#header, #footer {margin-left: 155px;}';
 
 global $SkinWidth,$SkinSidebarWidth,$SkinWidthUnit;
 SDV($SkinWidth,850);
@@ -86,13 +85,13 @@ global $SkinColor, $ValidSkinColors, $_GET;
 function dg_PoweredBy(){
 	print ('<a href="http://pmwiki.com/'.($GLOBALS['bi_BlogIt_Enabled']?'Cookbook/BlogIt">BlogIt':'">PmWiki').'</a>');
 }
-# Determine logo height and width
+# Determine logo height and width and add padding, unless already set by config.php
 function dg_SetLogoHeightWidth ($wPad, $hPad=0){
 global $PageLogoUrl, $PageLogoUrlHeight, $PageLogoUrlWidth;
 	if (!isset($PageLogoUrlWidth) || !isset($PageLogoUrlHeight)){
 		$size = @getimagesize($PageLogoUrl);
 		if (!isset($PageLogoUrlWidth))  SDV($PageLogoUrlWidth, ($size ?$size[0]+$wPad :0) .'px');
-		if (!isset($PageLogoUrlHeight))  SDV($PageLogoUrlHeight, ($size ?$size[1]+$hPad :0) .'px');
+		if (!isset($PageLogoUrlHeight))  SDV($PageLogoUrlHeight, ($size ?($size[1]+$hPad) :0) .'px');
 	}
 }
 function dg_NoTitle(){
