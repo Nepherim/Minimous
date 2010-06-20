@@ -1,0 +1,496 @@
+/*
+Theme Name: Minimous
+Theme URI: http://www.webtatic.com/projects/minimous/
+Description: A clean and sleek personal blog theme, supporting header-navigation, sidebar and footer widgets.
+Version: 1.0.5
+Author: Andrew Thompson
+Author URI: http://www.webtatic.com/
+Tags: white, one-column, right-sidebar, fixed-width
+
+*/
+
+/*
+* License: GNU GPL
+* Copyright (c) 2009 Andrew Thompson
+*/
+
+html, body {
+	font-family: Arial,Helvetica,sans-serif;
+	text-align: center;
+	color: #424037;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #BC7134;
+}
+
+#content, #sidebar, #entry, #wikitext {
+	overflow: hidden;
+}
+
+#content p, #wikitext p {
+	line-height: 2em;
+	margin: 10px 0;
+}
+
+#content li, #wikitext li {
+	line-height: 2em;
+	margin: 5px 0;
+}
+
+#content .menu {
+	margin: 40px 0;
+}
+
+#content .menu ul li, #wikitext .menu ul li {
+	line-height: 1.2em;
+	margin: 2px 0;
+}
+
+#content table, #wikitext table {
+	margin: 15px 1px;
+	border-collapse: collapse;
+}
+
+#content ul, #wikitext ul {
+	list-style: none;
+}
+
+#content ol, #wikitext ol {
+	list-style-position: inside;
+}
+
+#page {
+	margin: 0 auto;
+	width: 900px;
+	text-align: left;
+}
+
+#content.noleftcolumn, #wikitext.noleftcolumn {
+	padding-left: 155px;
+	width: 505px;
+}
+
+#content a:hover, #sidebar a:hover, #header_nav a:hover, #wikitext a:hover {
+	text-decoration: underline;
+}
+
+#page-inner {
+	overflow:hidden;
+}
+
+#header {
+	margin-top: 8px;
+	margin-left: 0px; /* overridden when blogit is in use */
+	margin-bottom: 60px;
+}
+
+#header .sitetag {
+}
+
+#header_nav {
+	margin-bottom: 50px;
+	font-size: 12px;
+	text-align: right;
+	overflow: hidden;
+}
+
+#header_nav h2, #footer h2 {
+	display: none;
+}
+
+#header_nav ul.menu {
+	list-style: none;
+}
+#header_nav ul.menu {
+	float: right;
+	margin-right: 20px
+}
+#header_nav ul.menu.tabnav {
+	float: right;
+}
+
+#footer {
+	clear: left;
+	margin-left: 0;
+	margin-bottom: 30px;
+	padding-top: 30px;
+	font-size: 10px;
+}
+
+ul.menu {
+	overflow:hidden;
+}
+
+ul.menu, ul.menu ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+ul.menu li {
+	float: left;
+	padding: 0 10px;
+	border-left: 1px solid #C6C1A5;
+	color: #C6C1A5;
+}
+
+ul.menu li:first-child {
+	border: 0;
+	padding-left: 0;
+}
+
+ul.menu li li:first-child {
+	padding-left: 0;
+}
+
+ul.menu li li:last-child {
+	padding-right: 0;
+}
+
+.current_page_item a {
+	color: #424039;
+}
+
+.current_page_item li a {
+	color: #BC7134;
+}
+
+#header h1 {
+	margin-bottom: 5px;
+}
+
+#header h1 a {
+	color: #999;
+}
+
+#header h1 a:hover {
+	color: #ccc;
+}
+
+div.post, div.page, div.attachment {
+	margin-bottom: 60px;
+}
+
+#content, #wikitext {
+	float: left;
+	margin-right: 60px;
+	width: 660px;
+	font-size: 12px;
+}
+
+#content h2 a, #wikitext h2 a {
+	color: #444;
+}
+
+#content h2, #wikitext h2 {
+	font-size: 22px;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+#content h2 a:hover, #wikitext h2 a:hover {
+	text-decoration: none;
+}
+
+#content h2 a:hover, #wikitext h2 a:hover {
+	color: #999;
+}
+
+.post .date, .page .date, .attachment .date, .comment .date, .blogit-commentblock .date {
+	float: left;
+	width: 130px;
+	text-align: right;
+	color: #c6c1a5;
+	font-size: 14px;
+	padding-top: 7px;
+}
+
+.post .post-inner, .page .post-inner, .attachment .post-inner {
+	margin-left: 130px;
+	padding-left: 25px;
+}
+
+#back_to_blog {
+	margin-top: 30px;
+	font-size: 12px;
+}
+
+#sidebar {
+	float: left;
+	width: 175px;
+	font-size: 12px;
+	color: #999;
+	margin-bottom: 80px;
+}
+
+#sidebar p {
+	line-height: 1.3em;
+	margin: 5px 0;
+}
+
+#sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#sidebar h2, #sidebar .sidehead {
+	font-size: 18px;
+	font-weight: bold;
+	color: #444;
+	margin: 15px 0;
+}
+
+#sidebar ul ul {
+	margin-left: 10px;
+}
+#sidebar ul ul li {
+	margin-bottom: 5px;
+}
+
+#sidebar ul ul ul {
+	margin-top: 3px;
+	margin-left: 20px;
+}
+
+#sidebar ul ul li:before {
+	content: "\00BB \0020";
+}
+
+.entry .menu ul li:before {
+	content: "";
+}
+
+#commentblock h2 { width: 500px; margin-top: 40px; margin-bottom: 15px; margin-left: 155px; font-size: 1.4em;
+	border-bottom: 1px solid #ddd; padding-bottom: 15px; color: #444; }
+
+.commentlist, .blogit-comment-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.comment, .blogit-commentblock {
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.comment .date, .blogit-commentblock .date {
+	padding: 0;
+}
+#commentblock .comment-author {
+	font-style:italic;
+	padding-left: 25px;
+}
+
+#content .comment p, #wikitext .blogit-commentblock p {
+	margin: 10px 0;
+}
+#wikitext .blogit-commentblock li {
+	margin: 15px 0;
+}
+
+.comment div.avatar, .blogit-commentblock div.avatar {
+	float: left;
+	clear: left;
+	text-align: right;
+	width: 130px;
+	margin-top: 10px;
+}
+
+.comment .reply, .blogit-commentblock .reply {
+	margin-bottom: 20px;
+}
+
+.comment .children, .blogit-commentblock .children {
+	margin-top: 20px;
+}
+
+#comments-title {
+	margin-left: 130px;
+	padding-left: 25px;
+}
+
+.commenttext {
+	display: block;
+	margin-left: 130px;
+	padding-left: 25px;
+}
+
+#commentform {
+	width: 95%;
+}
+
+#commentform textarea {
+	width: 100%;
+	height: 100px;
+	border: 1px solid #ccc;
+}
+
+#respond, #commentblock form {
+	margin-left: 130px;
+	padding-left: 25px;
+}
+
+#respond p, #commentblock form p {
+	margin: 10px 0;
+}
+#commentblock form h2 {
+	margin-left:0;
+}
+
+.pagenavigation, .blogit-page-navigation {
+	margin-left: 155px;
+	margin-bottom: 80px;
+	overflow: hidden;
+}
+
+img {
+	border: 0;
+}
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption-dd {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+
+#searchform input[type='text'] {
+	width: 60%;
+	font-size: 12px;
+	padding: 2px;
+	padding-left: 20px;
+	background: url(images/search16.png) center left no-repeat;
+	background-position: 3px;  background-color: #fff;
+	-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+}
+#searchform input[type='submit'] {
+	font-size: 10px;
+	padding: 2px;
+	margin: 5px 0px 0px 0px;
+}
+/* forms */
+input, select, textarea {
+	color: #444;
+	font-family: "Lucida Grande", sans-serif;
+	line-height:1.3em !important;
+	padding: 5px;
+	margin: 2px 5px;
+}
+input[type='text'], input[type='password'], select, textarea {
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+input[type='button'], input[type='submit'] {
+	height: 2em;
+	font-size: 1.4em;
+	color: #444;
+	margin-top: 10px;
+}
+textarea {
+	width: 97%;
+}
+#commentblock textarea {
+	border:1px solid #DDDDDD;
+	color:#444444;
+	font-family:"Lucida Grande",sans-serif;
+	font-size:14px;
+	padding:3px;
+}
+#commentblock input {
+	margin-bottom:1em;
+}
+
+
+/* PmWiki Standard */
+.indent { margin-left:40px; }
+.outdent { margin-left:40px; text-indent:-40px; }
+fieldset { margin: 0; padding: 0; border-style: none; }
+.wikimessage {padding-bottom: 15px; font-weight: bold; font-size: 130%; }
+.quickref p { margin:0; padding:0;}
+.quickref br { display: none; }
+
+/* PmWiki Mods */
+a.createlink { text-decoration: none; padding-left: 1px; position:relative; top:-0.5em; }
+.menu a.createlink { display: none; }
+#wikitext hr { border:2px solid; margin:2em 0; }
+#wikitext .escaped { overflow: auto; height: auto; width: 90%; margin: 1.5em auto; padding: .15em; }
+#wikitext .quickref p, #wikitext .quickref .outdent, #wikitext .quickref div, #wikitext .quickref strong {font-size:1em; margin:0; text-align:left; text-indent:0; line-height: 2em}
+#wikiedit, #wikiedit form input[type=submit] { margin-top: 25px; }
+.pagegroup { text-decoration: none; }
+.quickref { color: #000; background-color: #EFEFEF !important; }
+#wikidiff { font-size: 144%; } /* override PmWiki default of 66% */
+
+/* PmWiki Additions */
+/* .pageactions { font-size: 10px; }*/
+.pageactions a, #footer a { color: #C6C1A5; } /*#DE9C65*/
+
+/* BlogIt */
+.blogit-clear { clear: both; }
+.editlink, .blogit-editlink { padding-left: 10px; }
+.blogit-comment-header { text-transform: lowercase; }
+.blogit-readmore { display: block; margin-top: 15px; text-transform: lowercase;  } /* margin counteract effect of p.vspace around .blogit-readmore */
+.blogit-listmore { margin: 10px 0 30px; text-align: right; }
+.blogit-submit-row { padding-top: 10px; }
+.blogit-submit-row img { vertical-align: bottom; padding-bottom: 1px; }
+.blogit-page-navigation,.page-navigation { margin: 1.2em 0; }
+.blogit-older-entries, .next-entries { float: right; }
+.blogit-newer-entries, .previous-entries { float: left; }
+.blogit-older-entries, .blogit-newer-entries, .previous-entries, .next-entries { font-size: 1.3em; font-weight: bold; }
+.blogit-newer-entries a, .previous-entries a { padding-left: 18px; background: url(images/mini-nav-left.gif) no-repeat left center; }
+.blogit-older-entries a, .next-entries a { padding-right: 18px; background: url(images/mini-nav-right.gif) no-repeat right center; }

@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+	<title>$WikiTitle {$Group}/{$Titlespaced}</title>
+	<link rel="stylesheet" type="text/css" href="$SkinDirUrl/style.css" media="screen" title="style (screen)" />
+	<link rel="stylesheet" type="text/css" href="$SkinDirUrl/color-$SkinColor/default.css" media="screen" title="style (screen)" />
+	<!--HTMLHeader-->
+</head>
+
+<body class="home blog">
+	<div id="page">
+		<div id="page-inner">
+
+			<div id="header">
+				<div id="header_nav">
+					<ul class="menu tabnav">
+						<li>
+							<!--PageTabsFmt-->
+							<!--wiki:{$Group}.SiteNav {$SiteGroup}.SiteNav-->
+							<!--/PageTabsFmt-->
+						</li>
+					</ul>
+					<ul class="menu pageactions">
+						<!--PageActionFmt-->
+						<!--wiki:{$Group}.PageActions {$SiteGroup}.PageActions-->
+						<!--/PageActionFmt-->
+					</ul>
+				</div>
+
+				<div id="headerimg">
+					<!--PageHeaderFmt-->
+					<!--wiki:{$Group}.SiteHeader {$SiteGroup}.SiteHeader-->
+					<!--/PageHeaderFmt-->
+				</div>
+			</div>
+
+			<div id="content">
+				<!--PageTitleGroupFmt-->
+				<a href="{$ScriptUrl}/{$Group}" class="pagegroup">{$Group}</a>
+				<!--/PageTitleGroupFmt-->
+				<!--PageTitleFmt-->
+				<h2 id="page-head" class="page-head"><a href="{$PageUrl}">{$Titlespaced}</a></h2>
+				<!--/PageTitleFmt-->
+
+				<!--PageText-->
+			</div>
+
+			<div id="sidebar">
+				<!--PageSearchFmt-->
+				<p class="sidehead">$[Search]</p>
+				<ul>
+					<li id="search">
+						<form id="searchform" action='$ScriptUrl' method="get"><fieldset>
+							<input type='hidden' name='n' value='{$FullName}' />
+							<input type='hidden' name='action' value='search' />
+							<p>
+								<input id='s' class='text' type='text' name='q' value="" />
+								<input id='searchsubmit' class='button' type='submit' value='$[Go]' />
+							</p>
+						</fieldset></form>
+					</li>
+				</ul>
+				<!--/PageSearchFmt-->
+
+				<!--PageRightFmt-->
+				<ul><li>
+					<!--wiki:{$Group}.SideBar {$SiteGroup}.SideBar-->
+				</li></ul>
+				<!--/PageRightFmt-->
+			</div>
+
+			<div id="footer">
+				<ul class="menu">
+					<li><a href="http://pmwiki.com/Cookbook/Minimous">Minimous</a> $[theme originally by] <a href="http://andytson.com/blog/2010/01/minimous-posterous-minimalist-look-in-wordpress/">Andy Thompson</a>, $[adapted by] <a href="http://solidgone.org/Skins">David Gilbert</a></li>
+					<li>$[powered by] <!--function:dg_PoweredBy--></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
