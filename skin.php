@@ -21,14 +21,13 @@ if (!empty($PageLogoUrl)) {
 if ($action=='browse' && IsEnabled($bi_BlogIt_Enabled))  $HTMLStylesFmt['minimous'] .= '#header, #footer {margin-left: 155px;}';
 
 global $SkinWidth,$SkinSidebarWidth,$SkinWidthUnit;
-SDV($SkinWidth,850);
-SDV($SkinSidebarWidth,195);  #good percentage width is 25
+SDV($SkinWidth,900);
+SDV($SkinSidebarWidth,175);  #good percentage width is 25
 SDV($SkinWidthUnit,'px');  #only use 'px' or '%'
-/*
-$HTMLStylesFmt['minimous'] .=	'#header, #page, #footer-inner { width: '.$SkinWidth.$SkinWidthUnit.'; } '.
-	'#content { width: '.($SkinWidthUnit=='px'?($SkinWidth-$SkinSidebarWidth-55) :(100-$SkinSidebarWidth-5)) .$SkinWidthUnit.'; } '.
-	'#sidebar { width: '.$SkinSidebarWidth .$SkinWidthUnit.'; } ';
-*/
+$HTMLStylesFmt['minimous'] .=
+	'#page { width: '.$SkinWidth.$SkinWidthUnit.'; }'.
+	'#content, #wikitext { width: '.($SkinWidthUnit=='px' ?($SkinWidth-$SkinSidebarWidth-70) :(100-$SkinSidebarWidth-5)) .$SkinWidthUnit.'; }'.
+	'#sidebar { width: '.$SkinSidebarWidth .$SkinWidthUnit.'; }';
 $SkinColor = dg_SetSkinColor('green', array('green','orange','blue','purple','yellow','pink'));
 
 # ----------------------------------------
