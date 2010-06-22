@@ -1,0 +1,30 @@
+html, body, .current_page_item a {
+	color: #424037;  /* Very dark grey */
+}
+a, .current_page_item li a, #sidebar h2, #sidebar .sidehead {
+	color: #6b257c; /* MAIN */
+}
+ul.menu li, .post .date, .page .date, .attachment .date, .comment .date, .blogit-commentblock .date, .pageactions a, #footer a {
+	color: #af74be;  /* very light MAIN */
+}
+ul.meta li {
+	color: #6b257c; /* MAIN */
+}
+#header .sitetag, #header h1 a, #content h2 a:hover, #wikitext h2 a:hover, #sidebar{
+	color: #999; /* mid grey */
+}
+ul.menu li {
+	border-color: #C6C1A5;
+}
+#header h1 a:hover {
+	color: #ccc;  /* lighter grey */
+}
+#content h2 a, #wikitext h2 a, #commentblock h2, #commentblock textarea {
+	color: #444;  /* Dark grey */
+}
+#commentblock h2, #commentblock textarea {
+	border-color: #ddd;
+}
+input, select, textarea, input[type='button'], input[type='submit'] {
+	color: #444;
+}

@@ -1,14 +1,12 @@
 html, body {
 	font-family: Arial,Helvetica,sans-serif;
 	text-align: center;
-	color: #424037;
 	padding: 0;
 	margin: 0;
 }
 
 a {
 	text-decoration: none;
-	color: #BC7134;
 }
 
 #content, #sidebar, #entry, #wikitext {
@@ -71,8 +69,7 @@ a {
 }
 
 #header .sitetag {
-	font-size: 1.4em;
-	color: #999;
+	font-size: 0.9em;
 }
 
 #header_nav {
@@ -119,7 +116,6 @@ ul.menu li {
 	float: left;
 	padding: 0 10px;
 	border-left: 1px solid #C6C1A5;
-	color: #C6C1A5;
 }
 
 ul.menu li:first-child {
@@ -136,11 +132,9 @@ ul.menu li li:last-child {
 }
 
 .current_page_item a {
-	color: #424039;
 }
 
 .current_page_item li a {
-	color: #BC7134;
 }
 
 #header h1 {
@@ -150,11 +144,9 @@ ul.menu li li:last-child {
 }
 
 #header h1 a {
-	color: #999;
 }
 
 #header h1 a:hover {
-	color: #ccc;
 }
 
 div.post, div.page, div.attachment {
@@ -169,7 +161,6 @@ div.post, div.page, div.attachment {
 }
 
 #content h2 a, #wikitext h2 a {
-	color: #444;
 }
 
 #content h2, #wikitext h2 {
@@ -183,14 +174,12 @@ div.post, div.page, div.attachment {
 }
 
 #content h2 a:hover, #wikitext h2 a:hover {
-	color: #999;
 }
 
 .post .date, .page .date, .attachment .date, .comment .date, .blogit-commentblock .date {
 	float: left;
 	width: 130px;
 	text-align: right;
-	color: #c6c1a5;
 	font-size: 14px;
 	padding-top: 7px;
 }
@@ -209,7 +198,6 @@ div.post, div.page, div.attachment {
 	float: left;
 	width: 175px;  /* Overridden by skin.php */
 	font-size: 12px;
-	color: #999;
 	margin-bottom: 80px;
 }
 
@@ -227,8 +215,11 @@ div.post, div.page, div.attachment {
 #sidebar h2, #sidebar .sidehead {
 	font-size: 18px;
 	font-weight: bold;
-	color: #444;
 	margin: 15px 0;
+}
+#sidebar p.sidehead {
+	margin-top: 15px;
+	margin-bottom: 10px;
 }
 
 #sidebar ul ul {
@@ -257,7 +248,7 @@ div.post, div.page, div.attachment {
 	margin-left: 155px;
 	font-size: 1.4em;
 	border-bottom: 1px solid #ddd;
-	padding-bottom: 15px; color: #444;
+	padding-bottom: 15px;
 }
 
 .commentlist, .blogit-comment-list {
@@ -377,31 +368,6 @@ img.alignleft {
 	float: right;
 }
 
-.wp-caption {
-	border: 1px solid #ddd;
-	text-align: center;
-	background-color: #f3f3f3;
-	padding-top: 4px;
-	margin: 10px;
-	-moz-border-radius: 3px;
-	-khtml-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-}
-
-.wp-caption img {
-	margin: 0;
-	padding: 0;
-	border: 0 none;
-}
-
-.wp-caption-dd {
-	font-size: 11px;
-	line-height: 17px;
-	padding: 0 4px 5px;
-	margin: 0;
-}
-
 #searchform input[type='text'] {
 	width: 60%;
 	font-size: 12px;
@@ -418,7 +384,6 @@ img.alignleft {
 }
 /* forms */
 input, select, textarea {
-	color: #444;
 	font-family: "Lucida Grande", sans-serif;
 	line-height:1.3em !important;
 	padding: 5px;
@@ -431,15 +396,13 @@ input[type='text'], input[type='password'], select, textarea {
 input[type='button'], input[type='submit'] {
 	height: 2em;
 	font-size: 1.4em;
-	color: #444;
 	margin-top: 10px;
 }
 textarea {
 	width: 97%;
 }
 #commentblock textarea {
-	border:1px solid #DDDDDD;
-	color:#444444;
+	border:1px solid #DDD;
 	font-family:"Lucida Grande",sans-serif;
 	font-size:14px;
 	padding:3px;
@@ -469,8 +432,7 @@ a.createlink { text-decoration: none; padding-left: 1px; position:relative; top:
 #wikidiff { font-size: 144%; } /* override PmWiki default of 66% */
 
 /* PmWiki Additions */
-/* .pageactions { font-size: 10px; }*/
-.pageactions a, #footer a { color: #C6C1A5; } /*#DE9C65*/
+
 
 /* BlogIt */
 .blogit-clear { clear: both; }

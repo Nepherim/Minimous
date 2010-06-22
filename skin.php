@@ -18,7 +18,10 @@ if (!empty($PageLogoUrl)) {
 		'#headerimg {height:' .$PageLogoUrlHeight .'; background: url(' .$PageLogoUrl .') left no-repeat} '.
 		'#headerimg .sitetitle a, #headerimg .sitetag {padding-left: ' .$PageLogoUrlWidth .'} ';
 }
-if ($action=='browse' && IsEnabled($bi_BlogIt_Enabled))  $HTMLStylesFmt['minimous'] .= '#header, #footer {margin-left: 155px;}';
+#Indent the header elements to match the indented blogit content  TODO: Tie into BlogIt active mechanism
+global $bi_BlogItActive;
+$bi_BlogItActive = $action=='browse' && isset($bi_EntryType) && $bi_EntryType=='blog';
+if ($bi_BlogItActive)  $HTMLStylesFmt['minimous'] .= '#header, #footer {margin-left: 155px;}';
 
 global $SkinWidth,$SkinSidebarWidth,$SkinWidthUnit;
 SDV($SkinWidth,900);
@@ -28,7 +31,7 @@ $HTMLStylesFmt['minimous'] .=
 	'#page { width: '.$SkinWidth.$SkinWidthUnit.'; }'.
 	'#content, #wikitext { width: '.($SkinWidthUnit=='px' ?($SkinWidth-$SkinSidebarWidth-70) :(100-$SkinSidebarWidth-5)) .$SkinWidthUnit.'; }'.
 	'#sidebar { width: '.$SkinSidebarWidth .$SkinWidthUnit.'; }';
-$SkinColor = dg_SetSkinColor('green', array('green','orange','blue','purple','yellow','pink'));
+$SkinColor = dg_SetSkinColor('copper', array('copper','teal','blue','green','purple','orange','yellow','pink'));
 
 # ----------------------------------------
 # - Standard Skin Setup
@@ -55,7 +58,7 @@ Markup('fieldsetend', 'inline', '/\\(:fieldsetend:\\)/i', "</fieldset>");
 
 #Required to move page H2 header under blogit control, so it can be placed within blogit div structure.
 global $bi_EntryType;
-if (isset($bi_EntryType) && $bi_EntryType=='blog')  dg_NoTitle();
+if ($bi_BlogItActive)  dg_NoTitle();
 
 # Override pmwiki styles otherwise they will override styles declared in css
 global $HTMLStylesFmt;
