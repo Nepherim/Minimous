@@ -5,8 +5,8 @@ charset=ISO-8859-1
 csum=
 ctime=1254106278
 host=127.0.0.1
-name=Site.XLPage-colorimetry
+name=Site.XLPage-minimous
 rev=6
 targets=
-text=### Colorimetry Template%0a  'Search' => '',%0a  'theme adapted by' => '',%0a  'Powered by' => '',%0a  'Page last modified on' => ''%0a
+text=### Minimous Template%0a  'Search' => '',%0a  'theme originally by' => '',%0a  'Powered by' => '',%0a  'Page last modified on' => ''%0a
 
