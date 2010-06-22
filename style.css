@@ -410,7 +410,9 @@ textarea {
 #commentblock input {
 	margin-bottom:1em;
 }
-
+td {
+	padding: 0.34em;
+}
 
 /* PmWiki Standard */
 .indent { margin-left:40px; }
@@ -448,3 +450,4 @@ a.createlink { text-decoration: none; padding-left: 1px; position:relative; top:
 .blogit-older-entries, .blogit-newer-entries, .previous-entries, .next-entries { font-size: 1.3em; font-weight: bold; }
 .blogit-newer-entries a, .previous-entries a { padding-left: 18px; background: url(images/mini-nav-left.gif) no-repeat left center; }
 .blogit-older-entries a, .next-entries a { padding-right: 18px; background: url(images/mini-nav-right.gif) no-repeat right center; }
+#wikitext .blogit-comment-admin-list .commenttext { margin-left: 0; }
