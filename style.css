@@ -102,32 +102,32 @@ a {
 	font-size: 10px;
 }
 
-ul.menu {
+ul.menu, div.menu ul {
 	overflow:hidden;
 }
 
-ul.menu, ul.menu ul {
+ul.menu, div.menu ul, ul.menu ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
 }
 
-ul.menu li {
+ul.menu li, div.menu li {
 	float: left;
 	padding: 0 10px;
 	border-left: 1px solid #C6C1A5;
 }
 
-ul.menu li:first-child {
+ul.menu li:first-child, div.menu li:first-child {
 	border: 0;
 	padding-left: 0;
 }
 
-ul.menu li li:first-child {
+ul.menu li li:first-child, div.menu li li:first-child {
 	padding-left: 0;
 }
 
-ul.menu li li:last-child {
+ul.menu li li:last-child, div.menu li li:last-child {
 	padding-right: 0;
 }
 
@@ -238,7 +238,7 @@ div.post, div.page, div.attachment {
 	content: "\00BB \0020";
 }
 
-.entry .menu ul li:before {
+.entry .menu ul li:before, div.menu ul li:before {
 	content: "";
 }
 
@@ -424,7 +424,7 @@ fieldset { margin: 0; padding: 0; border-style: none; }
 
 /* PmWiki Mods */
 a.createlink { text-decoration: none; padding-left: 1px; position:relative; top:-0.5em; }
-.menu a.createlink { display: none; }
+.menu a.createlink, div.menu a.createlink { display: none; }
 #wikitext hr { border:2px solid; margin:2em 0; }
 #wikitext .escaped { overflow: auto; height: auto; width: 90%; margin: 1.5em auto; padding: .15em; }
 #wikitext .quickref p, #wikitext .quickref .outdent, #wikitext .quickref div, #wikitext .quickref strong {font-size:1em; margin:0; text-align:left; text-indent:0; line-height: 2em}

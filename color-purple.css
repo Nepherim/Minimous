@@ -7,13 +7,13 @@ a, .current_page_item li a, #sidebar h2, #sidebar .sidehead {
 ul.menu li, .post .date, .page .date, .attachment .date, .comment .date, .blogit-commentblock .date, .pageactions a, #footer a {
 	color: #af74be;  /* very light MAIN */
 }
-ul.meta li {
+ul.meta li, div.menu ul li {
 	color: #6b257c; /* MAIN */
 }
 #header .sitetag, #header h1 a, #content h2 a:hover, #wikitext h2 a:hover, #sidebar{
 	color: #999; /* mid grey */
 }
-ul.menu li {
+ul.menu li, div.menu ul li {
 	border-color: #C6C1A5;
 }
 #header h1 a:hover {
