@@ -4,7 +4,7 @@ html, body, .current_page_item a {
 a, .current_page_item li a, #sidebar h2, #sidebar .sidehead {
 	color: #bca634; /* MAIN */
 }
-ul.menu li, .post .date, .page .date, .attachment .date, .comment .date, .blogit-commentblock .date, .pageactions a, #footer a {
+ul.menu li, .post .date, .page .date, .attachment .date, .comment .date, .blogit-commentblock .date, .pageactions a, #footer a, #sidebar a {
 	color: #decf85;  /* very light MAIN */
 }
 ul.meta li, div.menu ul li {
