@@ -9,7 +9,7 @@
  */
 global $FmtPV;
 $FmtPV['$SkinName'] = '"Minimous"';
-$FmtPV['$SkinVersion'] = '"1.0.1"';
+$FmtPV['$SkinVersion'] = '"1.0.2"';
 
 global $PageLogoUrl,$PageLogoUrlHeight,$PageLogoUrlWidth,$HTMLStylesFmt,$SkinTheme,$action,$bi_EntryType,$bi_BlogIt_Enabled;
 if (!empty($PageLogoUrl)) {
